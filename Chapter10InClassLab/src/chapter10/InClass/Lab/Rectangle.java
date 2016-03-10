@@ -6,12 +6,12 @@ public class Rectangle implements Shape {
 	
 	public Rectangle(double len, double width){
 		if(len<0){
-			throw new IllegalArgumentException(String.format("%d is a negative number length must be positive", len));
+			throw new IllegalArgumentException(String.format("%d is a negative number. Length must be positive", len));
 		}else{
 			this.length = len;
 		}
 		if(width < 0){
-			throw new IllegalArgumentException(String.format("%d is a negative number width must be positive", width));
+			throw new IllegalArgumentException(String.format("%d is a negative number. Width must be positive", width));
 		}else{
 		this.width = width;
 		}
