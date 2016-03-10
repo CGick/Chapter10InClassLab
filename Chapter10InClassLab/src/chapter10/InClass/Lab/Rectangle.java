@@ -42,5 +42,9 @@ public class Rectangle implements Shape {
 	public double getArea() {
 		return length * width;
 	}
+	
+	public String toString(){
+		return format.format(getArea());
+	}
 
 }

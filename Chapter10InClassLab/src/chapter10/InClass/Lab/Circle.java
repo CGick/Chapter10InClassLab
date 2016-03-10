@@ -27,5 +27,8 @@ public class Circle implements Shape {
 	public double getArea() {
 		return Math.PI * Math.pow(radius, 2);
 	}
-
+	
+	public String toString(){
+		return format.format(getArea());
+	}
 }
