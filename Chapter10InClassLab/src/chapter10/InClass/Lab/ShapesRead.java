@@ -14,19 +14,20 @@ public class ShapesRead {
 		
 		ArrayList<Shape> shapesData = new ArrayList<>();
 		
-		for(int i = 0; i < shapesData.length; i++){
-			try {
-				shapesData.add = (Shape)input.readObject();
-			} catch (ClassNotFoundException e) {
-				System.err.println("Tried to read a shape but that class does not exist!");
-				e.printStackTrace();
-			}
-			
-		}
-		input.close();
-		for(int i = 0; i <shapesData.length; i++){
-			System.out.println(shapesData[i]);
-		}
+//		for(int i = 0; i < shapesData.length; i++){
+//			try {
+//				Shape object = (Shape) input.readObject();
+//				shapesData.add(object);
+//			} catch (ClassNotFoundException e) {
+//				System.err.println("Tried to read a shape but that class does not exist!");
+//				e.printStackTrace();
+//			}
+//			
+//		}
+//		input.close();
+//		for(int i = 0; i <shapesData.length; i++){
+//			System.out.println(shapesData[i]);
+//		}
 	}
 
 }
