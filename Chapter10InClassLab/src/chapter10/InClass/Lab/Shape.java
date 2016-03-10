@@ -5,6 +5,6 @@ import java.text.DecimalFormat;
 
 public interface Shape extends Serializable{
 
-	DecimalFormat format = new DecimalFormat("%,.2f");
+	DecimalFormat format = new DecimalFormat("#,##0.00");
 	double getArea();
 }
